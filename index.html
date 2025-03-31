@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>FC Barcelona</title>
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <style>
         body {
             background-color: #edbb00;
@@ -17,13 +17,18 @@
         }
 
         .section-space {
-            margin-top: 25px;
-            margin-bottom: 35px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
         }
 
-        .text-center img {
+        .img-logo {
             max-width: 200px;
             height: auto;
+        }
+
+        .table {
+            background-color: transparent;
+            color: #004D99;
         }
 
         .table-bordered {
@@ -33,21 +38,44 @@
         .table-bordered th,
         .table-bordered td {
             border: 2px solid #a50044 !important;
+            background-color: transparent !important;
+        }
+
+        input.form-control {
+            background-color: transparent;
+            border: 2px solid #a50044;
+            color: #004D99;
+        }
+
+        input.form-control:focus {
+            background-color: #fff8dc;
+            border-color: #a50044;
+            box-shadow: none;
+        }
+
+        .btn-primary {
+            background-color: #a50044;
+            border-color: #a50044;
+        }
+
+        .btn-primary:hover {
+            background-color: #800033;
+            border-color: #800033;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container py-4">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1>FC Barcelona</h1>
             </div>
         </div>
 
-        <div class="row section-space">
-            <div class="col-md-12 text-center">
-                <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Escudo del FC Barcelona">
+        <div class="row section-space justify-content-center">
+            <div class="col-md-4 text-center">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Escudo del FC Barcelona" class="img-fluid img-logo">
             </div>
         </div>
 
@@ -67,245 +95,254 @@
         <div class="row section-space">
             <div class="col-md-12">
                 <h2>Jugadores históricos del FC Barcelona</h2>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Jugador</th>
-                            <th>Goles</th>
-                            <th>Asistencias</th>
-                            <th>Partidos Jugados</th>
-                            <th>Años en el Club</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lionel Messi</td>
-                            <td>672</td>
-                            <td>305</td>
-                            <td>778</td>
-                            <td>2004-2021</td>
-                        </tr>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Jugador</th>
+                                <th>Goles</th>
+                                <th>Asistencias</th>
+                                <th>Partidos Jugados</th>
+                                <th>Años en el Club</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lionel Messi</td>
+                                <td>672</td>
+                                <td>305</td>
+                                <td>778</td>
+                                <td>2004-2021</td>
+                            </tr>
 
-                        <tr>
-                            <td>Xavi Hernández</td>
-                            <td>85</td>
-                            <td>185</td>
-                            <td>767</td>
-                            <td>1998-2015</td>
-                        </tr>
+                            <tr>
+                                <td>Xavi Hernández</td>
+                                <td>85</td>
+                                <td>185</td>
+                                <td>767</td>
+                                <td>1998-2015</td>
+                            </tr>
 
-                        <tr>
-                            <td>Andrés Iniesta</td>
-                            <td>57</td>
-                            <td>140</td>
-                            <td>674</td>
-                            <td>2002-2018</td>
-                        </tr>
+                            <tr>
+                                <td>Andrés Iniesta</td>
+                                <td>57</td>
+                                <td>140</td>
+                                <td>674</td>
+                                <td>2002-2018</td>
+                            </tr>
 
-                        <tr>
-                            <td>Ronaldinho</td>
-                            <td>94</td>
-                            <td>61</td>
-                            <td>207</td>
-                            <td>2004-2021</td>
-                        </tr>
+                            <tr>
+                                <td>Ronaldinho</td>
+                                <td>94</td>
+                                <td>61</td>
+                                <td>207</td>
+                                <td>2004-2021</td>
+                            </tr>
 
-                        <tr>
-                            <td>Johan Cruyff</td>
-                            <td>60</td>
-                            <td>30</td>
-                            <td>180</td>
-                            <td>1973-1978</td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <tr>
+                                <td>Johan Cruyff</td>
+                                <td>60</td>
+                                <td>30</td>
+                                <td>180</td>
+                                <td>1973-1978</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
         <div class="row section-space">
             <div class="col-md-12">
                 <h3>Compras más caras en la historia del FC Barcelona</h3>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Jugador</th>
-                            <th>Costo (€)</th>
-                            <th>Año</th>
-                            <th>Procedencia</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr> 
-                        <td>Philippe Coutinho</td>
-                        <td>145 millones</td>
-                        <td>2018</td>
-                        <td>Liverpool</td>
-                        </tr>
-                        
-                        <tr>
-                        <td>Ousmane Dembélé</td>
-                        <td>125 millones</td>
-                        <td>2017</td>
-                        <td>Borussia Dormund</td>
-                        </tr>
-                        
-                        <tr>
-                        <td>Antoine Griezmann</td>
-                        <td>120 millones</td>
-                        <td>2019</td>
-                        <td>Atlético de Madrid</td>
-                        </tr>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Jugador</th>
+                                <th>Costo (€)</th>
+                                <th>Año</th>
+                                <th>Procedencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Philippe Coutinho</td>
+                                <td>145 millones</td>
+                                <td>2018</td>
+                                <td>Liverpool</td>
+                            </tr>
 
-                        <tr>
-                        <td>Neymar Jr</td>
-                        <td>88,2 millones</td>
-                        <td>2013</td>
-                        <td>Santos</td>
-                        </tr>
-                        
-                        <tr>
-                        <td>Luis Suárez</td>
-                        <td>81,72 millones</td>
-                        <td>2014</td>
-                        <td>Liverpool</td>
-                        </tr>
-                    
-                    </tbody>
-                </table>
+                            <tr>
+                                <td>Ousmane Dembélé</td>
+                                <td>125 millones</td>
+                                <td>2017</td>
+                                <td>Borussia Dormund</td>
+                            </tr>
+
+                            <tr>
+                                <td>Antoine Griezmann</td>
+                                <td>120 millones</td>
+                                <td>2019</td>
+                                <td>Atlético de Madrid</td>
+                            </tr>
+
+                            <tr>
+                                <td>Neymar Jr</td>
+                                <td>88,2 millones</td>
+                                <td>2013</td>
+                                <td>Santos</td>
+                            </tr>
+
+                            <tr>
+                                <td>Luis Suárez</td>
+                                <td>81,72 millones</td>
+                                <td>2014</td>
+                                <td>Liverpool</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
         <div class="row section-space">
             <div class="col-md-12">
                 <h3>Ventas más caras en la historia del FC Barcelona</h3>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Jugador</th>
-                            <th>Costo (€)</th>
-                            <th>Año</th>
-                            <th>Destino</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Neymar Jr</td>
-                            <td>222 millones</td>
-                            <td>2017</td>
-                            <td>PSG</td>
-                        </tr>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Jugador</th>
+                                <th>Costo (€)</th>
+                                <th>Año</th>
+                                <th>Destino</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Neymar Jr</td>
+                                <td>222 millones</td>
+                                <td>2017</td>
+                                <td>PSG</td>
+                            </tr>
 
-                        <tr>
-                            <td>Arthur Melo</td>
-                            <td>80,6 millones</td>
-                            <td>2020</td>
-                            <td>Juventus</td>
-                        </tr>
+                            <tr>
+                                <td>Arthur Melo</td>
+                                <td>80,6 millones</td>
+                                <td>2020</td>
+                                <td>Juventus</td>
+                            </tr>
 
-                        <tr>
-                            <td>Luís Figo</td>
-                            <td>60 millones</td>
-                            <td>2000</td>
-                            <td>Real Madrid</td>
-                        </tr>
+                            <tr>
+                                <td>Luís Figo</td>
+                                <td>60 millones</td>
+                                <td>2000</td>
+                                <td>Real Madrid</td>
+                            </tr>
 
-                        <tr>
-                            <td>Ousmane Dembélé</td>
-                            <td>50 millones</td>
-                            <td>2023</td>
-                            <td>PSG</td>
-                        </tr>
+                            <tr>
+                                <td>Ousmane Dembélé</td>
+                                <td>50 millones</td>
+                                <td>2023</td>
+                                <td>PSG</td>
+                            </tr>
 
-                        <tr>
-                            <td>Alexis Sánchez</td>
-                            <td>42,5 millones</td>
-                            <td>2014</td>
-                            <td>Arsenal FC</td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
+                            <tr>
+                                <td>Alexis Sánchez</td>
+                                <td>42,5 millones</td>
+                                <td>2014</td>
+                                <td>Arsenal FC</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
         <div class="row section-space">
             <div class="col-md-12">
                 <h3>Victorias más aplastantes</h3>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Rival</th>
-                            <th>Fecha</th>
-                            <th>Competencia</th>
-                            <th>Lugar</th>
-                            <th>Marcador</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Tarragona</td>
-                            <td>17 de Marzo de 1901</td>
-                            <td>Copa Macaya</td>
-                            <td>Tarragona</td>
-                            <td>0-18</td>
-                        </tr>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Rival</th>
+                                <th>Fecha</th>
+                                <th>Competencia</th>
+                                <th>Lugar</th>
+                                <th>Marcador</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tarragona</td>
+                                <td>17 de Marzo de 1901</td>
+                                <td>Copa Macaya</td>
+                                <td>Tarragona</td>
+                                <td>0-18</td>
+                            </tr>
 
-                        <tr>
-                            <td>Real Sociedad</td>
-                            <td>1951</td>
-                            <td>La Liga</td>
-                            <td>Camp Nou, Barcelona</td>
-                            <td>10-1</td>
-                        </tr>
+                            <tr>
+                                <td>Real Sociedad</td>
+                                <td>1951</td>
+                                <td>La Liga</td>
+                                <td>Camp Nou, Barcelona</td>
+                                <td>10-1</td>
+                            </tr>
 
-                        <tr>
-                            <td>SD Huesca</td>
-                            <td>16 de Diciembre de 2016</td>
-                            <td>Copa del Rey</td>
-                            <td>Camp Nou, Barcelona</td>
-                            <td>8-0</td>
-                        </tr>
+                            <tr>
+                                <td>SD Huesca</td>
+                                <td>16 de Diciembre de 2016</td>
+                                <td>Copa del Rey</td>
+                                <td>Camp Nou, Barcelona</td>
+                                <td>8-0</td>
+                            </tr>
 
-                        <tr>
-                            <td>Almería</td>
-                            <td>20 de Noviembre de 2010</td>
-                            <td>La Liga</td>
-                            <td>Estadio de los Juegos Mediterráneos, Almería</td>
-                            <td>8-0</td>
-                        </tr>
-
-                        <tr>
-                            <td>Bayern Leverkusen</td>
-                            <td>7 de Marzo de 2012</td>
-                            <td>UEFA Champions League (Octavos de final, Vuelta)</td>
-                            <td>Camp Nou, Barcelona</td>
-                            <td>7-1</td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <tr>
+                                <td>Almería</td>
+                                <td>20 de Noviembre de 2010</td>
+                                <td>La Liga</td>
+                                <td>Estadio de los Juegos Mediterráneos, Almería</td>
+                                <td>8-0</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Bayern Leverkusen</td>
+                                <td>7 de Marzo de 2012</td>
+                                <td>UEFA Champions League (Octavos de final, Vuelta)</td>
+                                <td>Camp Nou, Barcelona</td>
+                                <td>7-1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
         <div class="row section-space">
-            <div class="col-md-12">
-                <h4>¡Entra en la rifa para ir a un partido del Barça!</h4>
+            <div class="col-12 col-md-6 offset-md-3">
+                <h4 class="text-center">¡Entra en la rifa para ir a un partido del Barça!</h4>
                 <form>
-                    <div class="form-group">
-                        <label for="nombre">Nombre del aficionado:</label>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre del aficionado:</label>
                         <input type="text" class="form-control" id="nombre" name="nombre">
                     </div>
-                    <div class="form-group">
-                        <label for="correo">Correo del aficionado:</label>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo del aficionado:</label>
                         <input type="email" class="form-control" id="correo" name="correo">
                     </div>
-                    <div class="form-group">
-                        <label for="pais">País de localidad del aficionado:</label>
+                    <div class="mb-3">
+                        <label for="pais" class="form-label">País de localidad del aficionado:</label>
                         <input type="text" class="form-control" id="pais" name="pais">
                     </div>
-                    <button type="submit" class="btn btn-primary">¡Participa!</button>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">¡Participa!</button>
+                    </div>
                 </form>
             </div>
         </div>
+
     </div>
 </body>
 
